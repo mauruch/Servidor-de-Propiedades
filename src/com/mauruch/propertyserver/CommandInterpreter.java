@@ -12,6 +12,7 @@ public class CommandInterpreter {
 
 	private PropertyServer<String, String> server = new PropertyServerImpl();
 
+	//TODO Replace by a pattern design
 	public String execute(String command) {
 		try {
 			String[] splitted = command.split(SEPARATOR_EMPTY_SPACE);
